@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Color Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Product Color Selector</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Open+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-</head>
+  <body>
+    <div class="col info">
+      <h1>Molded Chair</h1>
+      <p>
+        A modern classic, this molded plastic chair is guaranteed to enhance the
+        look and feel of any home.
+      </p>
+      <p>
+        <span class="price">$89.99</span>
+        <span class="free-shipping">+ FREE Shipping</span>
+      </p>
+      <p class="choose-color">Choose a Color:</p>
+      <div class="color-swatches">
+        <div class="swatch selected" id="beige"></div>
+        <div class="swatch" id="yellow"></div>
+        <div class="swatch" id="blue"></div>
+        <div class="swatch" id="red"></div>
+      </div>
+    </div>
 
-<body>
+    <div class="col photo">
+      <img id="product-photo" src="img/chair-beige@2x.jpg" />
+    </div>
 
-	<div class="col info">
-		<h1>Molded Chair</h1>
-		<p>A modern classic, this molded plastic chair is guaranteed to enhance the look and feel of any home.</p>
-		<p>
-			<span class="price">$89.99</span>
-			<span class="free-shipping">+ FREE Shipping</span>
-		</p>
-		<p class="choose-color">Choose a Color:</p>
-		<div class="color-swatches">
-			<div class="swatch selected" id="beige"></div>
-			<div class="swatch" id="yellow"></div>
-			<div class="swatch" id="blue"></div>
-			<div class="swatch" id="red"></div>
-		</div>
-	</div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 
-	<div class="col photo">
-		<img id="product-photo" src="img/chair-beige@2x.jpg">
-	</div>
-
-		<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-			crossorigin="anonymous"></script>
-		
-		<script src="js\script.js"></script>
-</body>
-
+    <script src="js\script.js"></script>
+  </body>
 </html>
